@@ -1,4 +1,5 @@
 # custom-training-python-server
+
 this repository contains the server file to create api endpoint to run an inference on the model
 
 requirements:
@@ -9,6 +10,12 @@ uvicorn
 python-multipart
 Pillow
 
-pip3 install fastapi uvicorn python-multipart Pillow
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install fastapi uvicorn python-multipart Pillow numpy torch torchvision
+```
 
+```
 python3 server.py
+```
